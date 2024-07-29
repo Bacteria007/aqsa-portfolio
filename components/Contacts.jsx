@@ -22,8 +22,11 @@ const Contact = () => {
   };
 
   const sendMessage = async () => {
+    console.log("NEXT_PUBLIC_APP_URL:--->>>>", process.env.NEXT_PUBLIC_APP_URL);
+
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/sendMessage`, {
+
+      const response = await fetch(`/api/sendMessage`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
