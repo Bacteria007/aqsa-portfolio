@@ -23,7 +23,7 @@ const Contact = () => {
 
   const sendMessage = async () => {
     try {
-      const response = await fetch('https://aqsa-portfolio-fawn.vercel.app/api/sendMessage', {
+      const response = await fetch(`${process.env.NEXT_APP_URL}/api/sendMessage`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -102,6 +102,7 @@ const Contact = () => {
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
+                    required={true}
                       className="border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-2"
                       type="text"
                       name="name"
@@ -124,6 +125,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
+                    required={true}
                     className="border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-2"
                     type="email"
                     name="email"
@@ -141,7 +143,8 @@ const Contact = () => {
                 </div> */}
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
-                  <textarea
+                    <textarea
+                    required={true}
                     className="border-2 rounded-lg p-3 border-gray-300 focus:outline-none focus:ring-2"
                     rows="10"
                     name="message"
