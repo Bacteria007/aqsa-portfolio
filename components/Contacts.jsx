@@ -23,7 +23,7 @@ const Contact = () => {
 
   const sendMessage = async () => {
     try {
-      const response = await fetch(`${process.env.NEXT_APP_URL}/api/sendMessage`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/sendMessage`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
