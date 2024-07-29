@@ -23,7 +23,7 @@ const Contact = () => {
 
   const sendMessage = async () => {
     try {
-      const response = await fetch('/api/sendMessage', {
+      const response = await fetch('https://aqsa-portfolio-fawn.vercel.app/api/sendMessage', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
