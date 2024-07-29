@@ -50,6 +50,8 @@ export default async (req, res) => {
 
       res.status(200).send('Message sent successfully!');
     } catch (error) {
+      console.log('Email:', process.env.NEXT_MY_EMAIL_ID);
+      console.log('Password:', process.env.NEXT_MY_EMAIL_PASSWORD);
       console.error('Error sending email:', error);
       res.status(500).send('Failed to send message.');
     }
