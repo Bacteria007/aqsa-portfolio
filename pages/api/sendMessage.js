@@ -15,10 +15,19 @@ export default async (req, res) => {
     });
 
     const mailOptions = {
-      from: email,
-      to: MY_EMAIL,
-      subject: `Message from ${name}`,
-      text: message,
+      from: MY_EMAIL,
+      to: email,
+      subject: `Re: Message from ${name}`,
+      text: `Hello ${name},
+
+Thank you for reaching out to me through my portfolio. I appreciate you taking the time to get in touch.
+
+I have received your message and will review it shortly. If your inquiry requires a detailed response, I will get back to you as soon as possible. In the meantime, if you have any additional information or questions, please feel free to reply to this email.
+
+Thank you once again for contacting me. I look forward to connecting with you.
+
+Best regards,
+Aqsa`
     };
 
     try {
