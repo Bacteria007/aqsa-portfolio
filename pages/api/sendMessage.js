@@ -31,16 +31,17 @@ export default async (req, res) => {
       from: MY_EMAIL,
       to: email,
       subject: 'Thank you for reaching out!',
-      text: `Hello ${name},
-
-Thank you for reaching out to me through my portfolio. I appreciate you taking the time to get in touch.
-I have received your message and will review it shortly. If your inquiry requires a detailed response, I will get back to you as soon as possible. In the meantime, if you have any additional information or questions, please feel free to reply to this email.
-
-Thank you once again for contacting me. I look forward to connecting with you.
-
-Best regards,
-Aqsa`,
+      html: `
+        <div style="font-family: Arial, sans-serif; line-height: 1.6; text-align: justify;">
+          <p>Hello ${name},</p>
+          <p>Thank you for reaching out to me through my portfolio. I appreciate you taking the time to get in touch.</p>
+          <p>I have received your message and will review it shortly. If your inquiry requires a detailed response, I will get back to you as soon as possible. In the meantime, if you have any additional information or questions, please feel free to reply to this email.</p>
+          <p>Thank you once again for contacting me. I look forward to connecting with you.</p>
+          <p>Best regards,<br/>Aqsa</p>
+        </div>
+      `,
     };
+    
 
     try {
       // Send the user's message to your email
