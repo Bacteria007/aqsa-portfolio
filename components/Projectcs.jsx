@@ -28,6 +28,12 @@ const Projects = () => {
       title: "Townlift",
       language: "React Native",
     },
+    {
+      id: 'Shafer Tracker',
+      img: MyImages.TownliftImg,
+      title: "Townlift",
+      language: "React Native",
+    },
   ];
 
   return (
