@@ -17,8 +17,6 @@ const Skills = () => {
     { img: MyImages.Express, name: "Express" },
     { img: MyImages.Reactjs, name: "React Native" },
     { img: MyImages.Firebase, name: "Firebase" },
-
-
   ];
   const row3 = [
     { img: MyImages.PostgreSql, name: "PostgreSql" },

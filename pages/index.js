@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Aqsa | Full-Stack Developer</title>
-        <meta name="description" content="I’m a full-stack developer specializing in building  exceptional digital experiences." />
+        <title>Aqsa | Software Developer</title>
+        <meta name="description" content="I’m a Software developer specializing in building  exceptional digital experiences." />
         <link rel="icon" href="/whitelogo.png" />
       </Head>
     <Main />

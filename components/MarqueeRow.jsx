@@ -19,9 +19,9 @@ const MarqueeRow = ({ direction, data }) => {
         {duplicatedData.map((item, index) => (
           <div
             key={index}
-            className="p-6 h-20 w-52 shadow-md mx-8 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-300"
+            className="p-6 h-20 w-56 shadow-md mx-8 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-300"
           >
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="flex gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={item.img} alt={item.name} width={40} height={40} />
               </div>
