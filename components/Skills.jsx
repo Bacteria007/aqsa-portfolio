@@ -11,7 +11,7 @@ const Skills = () => {
 
   const row2 = [
     { img: MyImages.Reactjs, name: "Reactjs" },
-    { img: MyImages.Nextjs, name: "NextJS" },
+    // { img: MyImages.Nextjs, name: "NextJS" },
     { img: MyImages.MongoDB, name: "MongoDB" },
     { img: MyImages.Nodejs, name: "Nodejs" },
     { img: MyImages.Express, name: "Express" },
@@ -26,8 +26,8 @@ const Skills = () => {
     // { img: MyImages.Git, name: "Git" },
     { img: MyImages.Github, name: "Github" },
     { img: MyImages.MySql, name: "MySQL" },
-    { img: MyImages.Socketio, name: "Socket.io" },
-    // { img: MyImages.Android, name: "Android Studio" },
+    // { img: MyImages.Socketio, name: "Socket.io" },
+    { img: MyImages.Android, name: "Android Studio" },
 
   ];
 
